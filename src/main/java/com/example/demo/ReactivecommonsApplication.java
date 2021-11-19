@@ -12,7 +12,6 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableDomainEventBus
-@EnableMessageListeners
 public class ReactivecommonsApplication {
 
     public static void main(String[] args) {

@@ -39,11 +39,4 @@ public class ManageTasksUseCase {
         return Mono.just(new TaskToDo(id,name,description));
     }
 
-    //public <T> Mono<Void> functionReturningMonoVoid(DomainEvent<T> event) {
-    public Mono<Void> functionReturningMonoVoid(DomainEvent<TaskToDo> event) {
-       return Mono.just(event)
-               .log()
-               .doOnNext(algo -> System.out.println((TaskToDo)algo.getData()))
-               .then();
-    }
 }
