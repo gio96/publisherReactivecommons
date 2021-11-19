@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: reactivecommons
+  data:
+    mongodb:
+      uri: mongodb+srv://prueba:prueba@cluster0.dwhig.mongodb.net/test?authSource=admin&replicaSet=atlas-wkuhs8-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true
+      database: reactivecommons
