@@ -26,7 +26,6 @@ public class ManageTasksUseCase {
 
     public Mono<TestEvent> createNew(String name, String description) {
         return uuid()
-                //.flatMap(id -> TaskToDoFactory.createTask(id, name, description))
                 .flatMap(id -> taskToDoFactory(id, name, description))
                 .flatMap(tasks::save)
                 .flatMap(task -> emitCreatedEvent(task).thenReturn(task));

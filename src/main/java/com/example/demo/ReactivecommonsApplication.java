@@ -6,7 +6,6 @@ import org.reactivecommons.api.domain.DomainEventBus;
 import org.reactivecommons.async.api.DirectAsyncGateway;
 import org.reactivecommons.async.impl.config.annotations.EnableDirectAsyncGateway;
 import org.reactivecommons.async.impl.config.annotations.EnableDomainEventBus;
-import org.reactivecommons.async.impl.config.annotations.EnableMessageListeners;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
